@@ -1,6 +1,6 @@
 {
   "name": "mask-text",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Mask characters in a string",
   "main": "mask-text.js",
   "scripts": {
@@ -14,5 +14,9 @@
   "license": "MIT",
   "devDependencies": {
     "jest": "^24.9.0"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/anuja01/mask-text.git"
   }
 }
