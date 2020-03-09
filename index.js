@@ -9,6 +9,11 @@
  *
  */
 module.exports = (input, startIndex, endIndex, mask) => {
+
+    if((startIndex === -1) && (endIndex === -1)) {
+        return setCharAll(input, mask)
+    }
+
     for (let i = 0; i < input.length; i++) {
         if (i >= startIndex && i <= endIndex) {
             input = setCharAt(input, i, mask)
@@ -20,4 +25,8 @@ module.exports = (input, startIndex, endIndex, mask) => {
 const setCharAt = (str, index, chr) => {
     if (index > str.length - 1) return str;
     return str.substr(0, index) + chr + str.substr(index + 1);
+}
+
+const setCharAll = (str, chr) => {
+    return str.replace(/./g, char);
 }
