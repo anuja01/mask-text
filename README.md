@@ -10,5 +10,6 @@ https://www.npmjs.com/package/mask-text
 
 import mask from 'mask-text'
 
-const maskedMobile = mask('+94123456789', 2, 4, '*') // output > "+9***3456789"
+const partiallyMaskedMobile = mask('+94123456789', 2, 4, '*') // Mask string partially, output > "+9***3456789"
+const fullyMaskedMobile = mask('+94123456789', -1, -1, '*') // Mask string fully, output > "************"
 ```
